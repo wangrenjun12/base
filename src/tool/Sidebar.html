@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head jwcid="@wade:Head">
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>Sidebar</title>
+<link jwcid="@wade:Style" href="styles/newframe.css" rel="stylesheet" type="text/css" media="screen"/>
+<script language="javascript" type="text/javascript" src="scripts-custmanm/jquery.js"></script>
+<script jwcid="@wade:Script" language="JavaScript" src="scripts/frame.js"></script>
+</head>
+<body>
+<div class="f_side">
+			<h4 class="fold"><a href="javascript:void(0)">客户360度视图</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="（新）普通客户360视图" onclick="redirectToNav('custview.Cust360All','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="（新）VIP客户360视图" onclick="redirectToNav('custvipview.Vip360All','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="（新）集团客户360视图" onclick="redirectToNav('custgroupview.NEWBSS.Group360ViewAll_HBCU','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="（新）用户360视图" onclick="redirectToNav('newuserview.User360All','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="名单制集团客户360视图" onclick="redirectToNav('custgroupview.rootNet.Group360ViewAll','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="缓存清空" onclick="redirectToNav('component.adm.CacheMonitor','queryCaches', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">集团客户资料维护</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="集团客户新增" onclick="redirectToNav('custgroupview.NEWBSS.CustGroupAdd','createInit', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="基础集团客户管理" onclick="redirectToNav('basegroupmgr.BaseGrpCustQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="集团客户经理手工调配" onclick="redirectToNav('custdispatch.NEWBSS.GroupDispatchFirst','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="集团客户经理批量调配" onclick="redirectToNav('groupbat.GroupDispatchBatList','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="省级集团申请审核" onclick="redirectToNav('provinceGroupMgr.ProGroupAuditList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="集团生命周期图" onclick="redirectToNav('custgroupview.NEWBSS.GroupLife','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="名单制客户状态变更管理" onclick="redirectToNav('groupclassaudit.GroupClassChangeAuditList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="名单制集团客户新增" onclick="redirectToNav('custgroupview.rootNet.AddManageGroup','setCondition', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="名单制集团客户审核" onclick="redirectToNav('custgroupview.rootNet.MgrGroupAuditList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="新增产权客户审核" onclick="redirectToNav('custgroupview.NEWBSS.grouppropertyaudit.GroupPropertyAuditList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="产权客户操作日志" onclick="redirectToNav('custgroupview.NEWBSS.grouppropertyaudit.GroupPropertyActionFlow','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="集团合同预警规则管理" onclick="redirectToNav('zg.custevaluate.ContractAlarmRule','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="行业集群管理" onclick="redirectToNav('IndustryGroupTree','loadIndustryGroupTree', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">普通客户资料维护</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="潜在个人客户资料新增" onclick="redirectToNav('custview.AddCust','setCondition', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="潜在客户资料批量导入" onclick="redirectToNav('zg.custmgr.CustImpQry','setCondition', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户资料稽核查询" onclick="redirectToNav('zg.audit.CustAuditList','setConditionBSS2', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户资料稽核记录查询" onclick="redirectToNav('zg.audit.CustAuditRecordList','setCond', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="潜在客户分配" onclick="redirectToNav('custdispatch.Hiden_custDispatch','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="个人客户生命周期图" onclick="redirectToNav('custview.PersonLife','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户归并申请" onclick="redirectToNav('custquery.CustMerger','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户归并查询" onclick="redirectToNav('custquery.CustMergerQuery','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户归并审核" onclick="redirectToNav('custquery.CustMergerAudit','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户关系维护" onclick="redirectToNav('zg.custgroupview.RelationQry','', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">VIP客户资料维护</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="VIP客户经理手工调配" onclick="redirectToNav('custdispatch.NEWBSS.VipDispatchFirst','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="VIP客户经理批量调配" onclick="redirectToNav('managerimport.VipDispatchBatList','', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">集团成员资料维护</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="（新）集团成员管理" onclick="redirectToNav('groupmembermgr.NEWBSS.GroupMemberAll','setCondition', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="集团成员新增" onclick="redirectToNav('groupmembermgr.NEWBSS.GroupMemberNew','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="集团成员批量调配" onclick="redirectToNav('groupbat.GmbBatDispatchList','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="集团成员批量导入" onclick="redirectToNav('groupmembermgr.GroupMemberImpQry','', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">俱乐部活动</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="俱乐部活动新增" onclick="redirectToNav('ncampaign.club.ClubCampaignInput','setOrderCondition&CAMPN_CLASS=08', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="俱乐部活动查询" onclick="redirectToNav('ncampaign.club.CampaignList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="申请加入俱乐部活动" onclick="redirectToNav('ncampaign.club.ClubberAddToCampaign','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="申请退出俱乐部活动" onclick="redirectToNav('ncampaign.club.CampaignCustBatchBack','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="俱乐部工作查询" onclick="redirectToNav('njob.JobSingleList','initJobQuery&cond_FLAG=1&cond_JOB_CLASS=08', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">会员卡管理</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="特色俱乐部批量发卡" onclick="redirectToNav('clubberbat.TraitBatSendCardQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="特色俱乐部批量换卡" onclick="redirectToNav('clubberbat.TraitBatChangeCardQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="特色俱乐部卡批量注销" onclick="redirectToNav('clubberbat.ClubCardBatchRecycle','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="特色俱乐部发卡量统计" onclick="redirectToNav('club.ClubberCardCount','queryAssociatorInfo', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡发卡" onclick="redirectToNav('club.SendCardNew','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡挂失" onclick="redirectToNav('vipcardmgr.CardLoss','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡解挂" onclick="redirectToNav('vipcardmgr.CardLossCancel','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡延期" onclick="redirectToNav('vipcardmgr.CardDelay','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡补卡" onclick="redirectToNav('club.ReissueCardNew','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员补卡查询" onclick="redirectToNav('vipcardmgr.ReissueQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="发卡量统计" onclick="redirectToNav('vipcardmgr.CountVipCard','Init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡换卡管理" onclick="redirectToNav('club.ChangeCardNew','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡密码管理" onclick="redirectToNav('vipcardmgr.ChangePwd','initInfo', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡注销" onclick="redirectToNav('zg.vipcardmgr.ToWaste','InitSD', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡已发卡查询" onclick="redirectToNav('club.SendCardHisQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡回收" onclick="redirectToNav('vipcardmgr.Recycle','InitSD', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员批量发卡" onclick="redirectToNav('clubberbat.BatSendCardQry','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员批量换卡" onclick="redirectToNav('clubberbat.BatChangeCardQry','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="特殊发卡审核" onclick="redirectToNav('club.ClubberLevelInfo','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="特殊批量发卡审核" onclick="redirectToNav('clubberbat.BatSpecialSendCardQry','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡领卡" onclick="redirectToNav('club.RecvCard','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="通知后会员未领卡" onclick="redirectToNav('club.NoReceiveCard','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="制卡信息导出" onclick="redirectToNav('club.CardMadeQry','', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">特色俱乐部管理</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="特色俱乐部批量导入" onclick="redirectToNav('zg.club.ClubImportBatList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="特色俱乐部新增" onclick="redirectToNav('zg.club.ClubAdd','initVipClub', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="特色俱乐部会员到期处理" onclick="redirectToNav('zg.club.TraitClubMemberAtterm','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="特色俱乐部查询" onclick="redirectToNav('zg.club.VipClubList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员活动参与费缴纳" onclick="redirectToNav('zg.paywithdrawmgr.PayWithdrawAdd','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员活动参与费查询" onclick="redirectToNav('zg.paywithdrawmgr.PayWithdrawMgr','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="俱乐部公共信息管理" onclick="redirectToNav('clubpubinfo.ClubRegulationsQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="俱乐部会员申请审批管理" onclick="redirectToNav('club.ClubberApplyList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="俱乐部会员统计" onclick="redirectToNav('club.AssociatorStat','initSuperClub', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="俱乐部会员批量导入" onclick="redirectToNav('zg.clubVipimport.BatImportQry','', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">会员管理</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="本月新增会员" onclick="redirectToNav('club.NewMemberList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员资料批量导出" onclick="redirectToNav('zg.clubinfobatexport.ClubInfoBatExport','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员资料批量导入" onclick="redirectToNav('clubberbat.ClubberBatImportQry','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员资料管理" onclick="redirectToNav('zg.clubber.ClubberInfo','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="红名单管理" onclick="redirectToNav('qryRedList','setCondition', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="星级人工批量指定" onclick="redirectToNav('vipStarBatImportQry','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="红名单批量审核" onclick="redirectToNav('batAuditRedList','setCondition', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户级别调整申请" onclick="redirectToNav('custvipaudit.VipChangeApply','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户级别调整审核" onclick="redirectToNav('custvipaudit.VipChangeAudit','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员批量注销" onclick="redirectToNav('clubberbat.ClubberBatRemoveQry','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="网外会员管理" onclick="redirectToNav('club.OutNetClubberInfo','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="重要会员管理" onclick="redirectToNav('club.IfImportClubber','setCondition', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="重要会员审核" onclick="redirectToNav('club.ImportClubberAudit','setInit', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员操作历史查询" onclick="redirectToNav('zg.clubber.ViphisQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员缴费加入俱乐部管理" onclick="redirectToNav('clubber.ClubberFeeAdd&','setCondition', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">俱乐部服务管理</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="绿色通道贵宾厅统计" onclick="redirectToNav('zg.greenpathser.Qryclubbersta','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="联盟商家质量级别评定" onclick="redirectToNav('zg.unionmerchantmgr.UnionMerchantAssess','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="服务场所管理" onclick="redirectToNav('club.ClubServList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员服务记录管理" onclick="redirectToNav('club.ClubberServList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="俱乐部品牌管理" onclick="redirectToNav('club.ClubList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="俱乐部结算规则管理" onclick="redirectToNav('club.BalanceRuleList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="结算对账记录" onclick="redirectToNav('club.BalanceList','setInit', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员通知发送" onclick="redirectToNav('club.MemberInformList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员通知模版" onclick="redirectToNav('club.MemberInformMgr','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="短信手工发送" onclick="redirectToNav('club.SendCustList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="短信发送审核" onclick="redirectToNav('club.SendSMSApprove','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="联盟商家资料管理" onclick="redirectToNav('zg.unionmerchantmgr.UnionMerchantQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="联盟商家统计" onclick="redirectToNav('zg.unionmerchantmgr.UnionMerchantStat','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员服务细项维护" onclick="redirectToNav('club.ClubServDetailQry','setInit', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员通知历史查询" onclick="redirectToNav('club.MemberInformHisQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员服务类型维护" onclick="redirectToNav('club.ClubServTypeQry','setInit', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="IPhone认证" onclick="redirectToNav('zg.greenpathser.IphoneDefine','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡优惠次数维护" onclick="redirectToNav('zg.club.SvcNumMan','setCondition', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="绿色通道服务查询" onclick="redirectToNav('zg.greenpathser.GreenPathQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="绿色通道服务新增" onclick="redirectToNav('zg.greenpathser.GreenPathAdd','setInit', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="绿色通道服务返销" onclick="redirectToNav('zg.greenpathser.GreenPathCancel','setInit', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="合作商家服务消费管理" onclick="redirectToNav('club.PartnerServList','', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">客户资料查询</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="客户经理查询(客管)" onclick="redirectToNav('groupbat.SmsAuditManagerSelect','Init&FLAG=1', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="普通客户定制查询" onclick="redirectToNav('custquery.CustPersonInfo','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="用户定制查询" onclick="redirectToNav('userview.UserInfoQuery','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户经理流失客户查询" onclick="redirectToNav('zg.smsmgr.OutflowQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="调配日志查询" onclick="redirectToNav('custdispatch.NEWBSS.DispatchHisQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="离网用户信息查询" onclick="redirectToNav('custquery.RemoveCustQry','', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">综合查询</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="基础集团日志查询" onclick="redirectToNav('basegroupmgr.BaseGrpLog','setCondition', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户修改历史查询" onclick="redirectToNav('custquery.CustModifyLog','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="VIP客户简明资料查询" onclick="redirectToNav('custvipquery.VipCustomQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户经理操作日志查询" onclick="redirectToNav('vipcardmgr.OperLogQry','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户经理短信发送日志查询" onclick="redirectToNav('vipcardmgr.ManagerSmsLogList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户属性定制查询" onclick="redirectToNav('zg.custpropertyqry.CustPropertyQry','', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">集团客户定制查询</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="客户合同统计" onclick="redirectToNav('contract.ContractStat','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="集团客户定制查询" onclick="redirectToNav('custgroupqry.GroupCustomList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="集团合同定制查询" onclick="redirectToNav('custgroupqry.GroupContractList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="集团成员定制查询" onclick="redirectToNav('custgroupqry.GroupMemberList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="集团成员变更定制查询" onclick="redirectToNav('custgroupqry.NewGroupMemberChangeList','', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">VIP客户定制查询</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="基本信息定制查询" onclick="redirectToNav('custvipquery.VipBaseList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="联系信息定制查询" onclick="redirectToNav('custvipquery.VipContactList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="纪念日定制查询" onclick="redirectToNav('custvipquery.VipCommeList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="关系信息定制查询" onclick="redirectToNav('custvipquery.VipRelaList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="兴趣信息定制查询" onclick="redirectToNav('custvipquery.VipInterestList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="VIP用户定制查询" onclick="redirectToNav('uservipquery.UserVipBaseList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="VIP客户变更定制查询" onclick="redirectToNav('custvipchange.NewCustVipChangeList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="VIP客户等级变更查询" onclick="redirectToNav('custvipquery.VipCustChange','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="VIP用户注销定制查询" onclick="redirectToNav('custvipquery.VipRemoveList','', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">分级积分管理</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="会员卡优惠次数参数维护" onclick="redirectToNav('upgraderule.SvcParam','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="(新)分级规则维护" onclick="redirectToNav('upgraderule.UpgradeRule','initCondition', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户分级规则管理" onclick="redirectToNav('upgraderule.GradeRuleList','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户分级规则审核" onclick="redirectToNav('upgraderule.GradeRuleApprove','', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="GTM工作任务管理" onclick="redirectToNav('worktask.WorkStart','init&title=客户管理', null, 'contentframe')"></a></li> 
+			</ul>
+			
+			<h4 class="fold"><a href="javascript:void(0)">客户经理管理</a></h4>
+			<ul  style="display:none;">
+			    <li><a jwcid="@wade:PageRedirect" value="客户经理管理" onclick="redirectToNav('managermgr.gw.CustManagerList','init', null, 'contentframe')"></a></li> 
+			    <li><a jwcid="@wade:PageRedirect" value="客户经理新增" onclick="redirectToNav('managermgr.gw.CustManagerAdd','initCustManager', null, 'contentframe')"></a></li> 
+			</ul>
+</div>
+</body>
+</html>
